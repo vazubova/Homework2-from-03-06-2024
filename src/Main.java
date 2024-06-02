@@ -15,6 +15,24 @@ public class Main {
         System.out.println("число "+number);
         System.out.println("большое число "+bigNumber);
 
+        byte firstNumber = 67;
+        short secondNumber = -159;
+        short thirdNumber = 569;
+        short fourthNumber = 27897;
+        long fifthNumber = 987678965549L;
+        float sixthNumber = 27.12f;
+        double seventhNumber = 2.786;
+
+        System.out.println(firstNumber);
+        System.out.println(secondNumber);
+        System.out.println(thirdNumber);
+        System.out.println(fourthNumber);
+        System.out.println(fifthNumber);
+        System.out.println(sixthNumber);
+        System.out.println(seventhNumber);
+
+
+
 
 
 
