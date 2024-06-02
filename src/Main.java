@@ -40,5 +40,24 @@ public class Main {
         int sheetsForOneStudent = totalSheets/(studentsOfLudmilaPavlovna + studentsOfAnnaSergeevna + studentsOfEkatherinaAndreevna);
 
         System.out.println("На каждого ученика рассчитано " + sheetsForOneStudent + " листов бумаги");
+
+        byte numberOfBottles = 16;
+        byte minutesForNumberOfBottles = 2;
+        byte numberOfMinutes = 20;
+        byte numberOfOneDay = 1;
+        byte numberOfThreeDays = 3;
+        byte minutesInOneHour = 60;
+        byte hoursInOneDay = 24;
+        byte daysInOneMonth = 31;
+
+        int bottlesInTwentyMinutes = (numberOfMinutes/minutesForNumberOfBottles)*numberOfBottles;
+        int bottlesInOneDay = ((hoursInOneDay*minutesInOneHour)/minutesForNumberOfBottles)*numberOfBottles;
+        int bottlesInThreeDays = (((hoursInOneDay*numberOfThreeDays)*minutesInOneHour)/minutesForNumberOfBottles)*numberOfBottles;
+        int bottlesInOneMonth = (((daysInOneMonth*hoursInOneDay)*minutesInOneHour)/minutesForNumberOfBottles)*numberOfBottles;
+
+        System.out.println("За " + numberOfMinutes + " минут " + "машина произвела " + bottlesInTwentyMinutes + " штук бутылок");
+        System.out.println("За " + numberOfOneDay + " день " + "машина произвела " + bottlesInOneDay +  " штук бутылок");
+        System.out.println("За " + numberOfThreeDays + " дня " + "машина произвела " + bottlesInThreeDays + " штук бутылок");
+        System.out.println("За " + daysInOneMonth +  " день " + "машина произвела " + bottlesInOneMonth + " штук бутылок");
     }
 }
