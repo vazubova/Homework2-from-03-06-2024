@@ -59,5 +59,17 @@ public class Main {
         System.out.println("За " + numberOfOneDay + " день " + "машина произвела " + bottlesInOneDay +  " штук бутылок");
         System.out.println("За " + numberOfThreeDays + " дня " + "машина произвела " + bottlesInThreeDays + " штук бутылок");
         System.out.println("За " + daysInOneMonth +  " день " + "машина произвела " + bottlesInOneMonth + " штук бутылок");
+
+        byte tinsOfPaint = 120;
+        byte tinsOfWhitePaintForOneClass = 2;
+        byte tinsOfBrownPaintForOneClass = 4;
+
+        int countOfTinsForOneClass = tinsOfWhitePaintForOneClass+tinsOfBrownPaintForOneClass;
+        int countOfClasses = tinsOfPaint/countOfTinsForOneClass;
+        int countOfWhitePaint  = tinsOfWhitePaintForOneClass*countOfClasses;
+        int countOfBrownPaint = tinsOfBrownPaintForOneClass*countOfClasses;
+
+        System.out.println("В школе, где " + countOfClasses +  " классов, нужно " + countOfWhitePaint +  " банок белой краски и " + countOfBrownPaint +  " банок коричневой краски");
+
     }
 }
