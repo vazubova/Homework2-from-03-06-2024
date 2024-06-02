@@ -32,9 +32,13 @@ public class Main {
         System.out.println(seventhNumber);
 
 
+        byte studentsOfLudmilaPavlovna = 23;
+        byte studentsOfAnnaSergeevna = 27;
+        byte studentsOfEkatherinaAndreevna = 30;
+        int totalSheets = 480;
 
+        int sheetsForOneStudent = totalSheets/(studentsOfLudmilaPavlovna + studentsOfAnnaSergeevna + studentsOfEkatherinaAndreevna);
 
-
-
+        System.out.println("На каждого ученика рассчитано " + sheetsForOneStudent + " листов бумаги");
     }
 }
