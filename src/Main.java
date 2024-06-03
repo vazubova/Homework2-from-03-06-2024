@@ -106,6 +106,30 @@ public class Main {
         System.out.println("Если спортсмен будет худеть по " + maxGrPerDay + " грамм в день, то похудение займёт "+ countOfDaysLosingByMaxGr + " дней.");
         System.out.println("Если спортсмен будет терять среднее значение грамм в день, то он похедеет за " + daysOnAverage + " дней.");
 
+        int oldSalaryOfMasha = 67760;
+        int oldSalaryOfDenis = 83690;
+        int oldSalaryOfKristina = 76230;
+        byte highInPercent = 10;
+        byte monthInOneYear = 12;
+        int fullNumberInPercent = 100;
+
+        int newSalaryOfMasha = oldSalaryOfMasha+((oldSalaryOfMasha/fullNumberInPercent)*highInPercent);
+        int oldMashaSalaryInYear = oldSalaryOfMasha*monthInOneYear;
+        int newMashaSalaryInYear = newSalaryOfMasha*monthInOneYear;
+        int differenceBetweenOldAndNewMashaSalary = newMashaSalaryInYear-oldMashaSalaryInYear;
+        int newSalaryOfDenis = oldSalaryOfDenis+((oldSalaryOfDenis/fullNumberInPercent)*highInPercent);
+        int oldDenisSalaryInYear = oldSalaryOfDenis*monthInOneYear;
+        int newDenisSalaryInYear = newSalaryOfDenis*monthInOneYear;
+        int differenceBetweenOldAndNewDenisSalary = newDenisSalaryInYear-oldDenisSalaryInYear;
+        int newSalaryOfKristina = oldSalaryOfKristina+((oldSalaryOfKristina/fullNumberInPercent)*highInPercent);
+        int oldKristinaSalaryInYear = oldSalaryOfKristina*monthInOneYear;
+        int newKristinaSalaryInYear = newSalaryOfKristina*monthInOneYear;
+        int differenceBetweenOldAndNewKristinaSalary = newKristinaSalaryInYear-oldKristinaSalaryInYear;
+
+        System.out.println("Маша теперь получает " + newSalaryOfMasha + " рублей. Годовой доход вырос на " + differenceBetweenOldAndNewMashaSalary + " рублей.");
+        System.out.println("Денис теперь получает " + newSalaryOfDenis + " рублей. Годовой доход вырос на " + differenceBetweenOldAndNewDenisSalary + " рублей.");
+        System.out.println("Кристина теперь получает " + newSalaryOfKristina + " рублей. Годовой доход вырос на " + differenceBetweenOldAndNewKristinaSalary + " рублей.");
+
 
     }
 }
