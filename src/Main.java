@@ -1,6 +1,5 @@
 public class Main {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         byte cats = 110;
         short towns = 25678;
         int dogs = 1546875;
@@ -8,12 +7,12 @@ public class Main {
         float number = 42.46f;
         double bigNumber = 32.5734;
 
-        System.out.println(cats+" кошек");
-        System.out.println(towns+" городов");
-        System.out.println(dogs+" собак");
-        System.out.println(frogs+" лягушек");
-        System.out.println("число "+number);
-        System.out.println("большое число "+bigNumber);
+        System.out.println("Значение переменной " + "cats" + " с типом " + "byte" + " равно " + cats);
+        System.out.println("Значение переменной " + "towns" + " с типом " + "short" + " равно " + towns);
+        System.out.println("Значение переменной " + "dogs" + " с типом " + "int" + " равно " + dogs);
+        System.out.println("Значение переменной " + "frogs" + " с типом " + "long" + " равно " + frogs);
+        System.out.println("Значение переменной " + "number" + " с типом " + "float" + " равно " + number);
+        System.out.println("Значение переменной " + "bigNumber" + " с типом " + "double" + " равно " + bigNumber);
 
         byte firstNumber = 67;
         short secondNumber = -159;
@@ -37,7 +36,7 @@ public class Main {
         byte studentsOfEkatherinaAndreevna = 30;
         int totalSheets = 480;
 
-        int sheetsForOneStudent = totalSheets/(studentsOfLudmilaPavlovna + studentsOfAnnaSergeevna + studentsOfEkatherinaAndreevna);
+        int sheetsForOneStudent = totalSheets / (studentsOfLudmilaPavlovna + studentsOfAnnaSergeevna + studentsOfEkatherinaAndreevna);
 
         System.out.println("На каждого ученика рассчитано " + sheetsForOneStudent + " листов бумаги");
 
@@ -50,26 +49,26 @@ public class Main {
         byte hoursInOneDay = 24;
         byte daysInOneMonth = 31;
 
-        int bottlesInTwentyMinutes = (numberOfMinutes/minutesForNumberOfBottles)*numberOfBottles;
-        int bottlesInOneDay = ((hoursInOneDay*minutesInOneHour)/minutesForNumberOfBottles)*numberOfBottles;
-        int bottlesInThreeDays = (((hoursInOneDay*numberOfThreeDays)*minutesInOneHour)/minutesForNumberOfBottles)*numberOfBottles;
-        int bottlesInOneMonth = (((daysInOneMonth*hoursInOneDay)*minutesInOneHour)/minutesForNumberOfBottles)*numberOfBottles;
+        int bottlesInTwentyMinutes = (numberOfMinutes / minutesForNumberOfBottles) * numberOfBottles;
+        int bottlesInOneDay = ((hoursInOneDay * minutesInOneHour) / minutesForNumberOfBottles) * numberOfBottles;
+        int bottlesInThreeDays = (((hoursInOneDay * numberOfThreeDays) * minutesInOneHour) / minutesForNumberOfBottles) * numberOfBottles;
+        int bottlesInOneMonth = (((daysInOneMonth * hoursInOneDay) * minutesInOneHour) / minutesForNumberOfBottles) * numberOfBottles;
 
         System.out.println("За " + numberOfMinutes + " минут " + "машина произвела " + bottlesInTwentyMinutes + " штук бутылок");
-        System.out.println("За " + numberOfOneDay + " день " + "машина произвела " + bottlesInOneDay +  " штук бутылок");
+        System.out.println("За " + numberOfOneDay + " день " + "машина произвела " + bottlesInOneDay + " штук бутылок");
         System.out.println("За " + numberOfThreeDays + " дня " + "машина произвела " + bottlesInThreeDays + " штук бутылок");
-        System.out.println("За " + daysInOneMonth +  " день " + "машина произвела " + bottlesInOneMonth + " штук бутылок");
+        System.out.println("За " + daysInOneMonth + " день " + "машина произвела " + bottlesInOneMonth + " штук бутылок");
 
         byte tinsOfPaint = 120;
         byte tinsOfWhitePaintForOneClass = 2;
         byte tinsOfBrownPaintForOneClass = 4;
 
-        int countOfTinsForOneClass = tinsOfWhitePaintForOneClass+tinsOfBrownPaintForOneClass;
-        int countOfClasses = tinsOfPaint/countOfTinsForOneClass;
-        int countOfWhitePaint  = tinsOfWhitePaintForOneClass*countOfClasses;
-        int countOfBrownPaint = tinsOfBrownPaintForOneClass*countOfClasses;
+        int countOfTinsForOneClass = tinsOfWhitePaintForOneClass + tinsOfBrownPaintForOneClass;
+        int countOfClasses = tinsOfPaint / countOfTinsForOneClass;
+        int countOfWhitePaint = tinsOfWhitePaintForOneClass * countOfClasses;
+        int countOfBrownPaint = tinsOfBrownPaintForOneClass * countOfClasses;
 
-        System.out.println("В школе, где " + countOfClasses +  " классов, нужно " + countOfWhitePaint +  " банок белой краски и " + countOfBrownPaint +  " банок коричневой краски");
+        System.out.println("В школе, где " + countOfClasses + " классов, нужно " + countOfWhitePaint + " банок белой краски и " + countOfBrownPaint + " банок коричневой краски");
 
         byte numberOfBananas = 5;
         byte grInOneBanana = 80;
@@ -81,13 +80,13 @@ public class Main {
         byte grInOneEgg = 70;
         int grPerKg = 1000;
 
-        int grOfFiveBananas = numberOfBananas*grInOneBanana;
-        int mlOfMilkToOneHundred = mlOfMilk/100;
-        int grOfMilk = grInOneHundredMl*mlOfMilkToOneHundred;
-        int grOfIceCream = grInOneIceCream*numberOfIceCream;
-        int grOfEggs = grInOneEgg*eggs;
-        int weightGr = grOfFiveBananas+grOfMilk+grOfIceCream+grOfEggs;
-        float weightKg = weightGr/(float)grPerKg;
+        int grOfFiveBananas = numberOfBananas * grInOneBanana;
+        int mlOfMilkToOneHundred = mlOfMilk / 100;
+        int grOfMilk = grInOneHundredMl * mlOfMilkToOneHundred;
+        int grOfIceCream = grInOneIceCream * numberOfIceCream;
+        int grOfEggs = grInOneEgg * eggs;
+        int weightGr = grOfFiveBananas + grOfMilk + grOfIceCream + grOfEggs;
+        float weightKg = weightGr / (float) grPerKg;
 
         System.out.println("Вес завтрака в граммах составляет " + weightGr + ". Вес завтрака в килограммах составляет " + weightKg);
 
@@ -97,13 +96,13 @@ public class Main {
         int grInOneKg = 1000;
         byte amountOfDataAboutWeight = 2;
 
-        int needToLoseWeightInGr = needToLoseWeightInKg*grInOneKg;
-        int countOfDaysLosingByMinimumGr = needToLoseWeightInGr/minimumGrPerDay;
-        int countOfDaysLosingByMaxGr = needToLoseWeightInGr/maxGrPerDay;
-        int daysOnAverage = needToLoseWeightInGr/((minimumGrPerDay+maxGrPerDay)/amountOfDataAboutWeight);
+        int needToLoseWeightInGr = needToLoseWeightInKg * grInOneKg;
+        int countOfDaysLosingByMinimumGr = needToLoseWeightInGr / minimumGrPerDay;
+        int countOfDaysLosingByMaxGr = needToLoseWeightInGr / maxGrPerDay;
+        int daysOnAverage = needToLoseWeightInGr / ((minimumGrPerDay + maxGrPerDay) / amountOfDataAboutWeight);
 
-        System.out.println("Если спортсмен будет худеть по " + minimumGrPerDay + " грамм в день, то похудение займёт "+ countOfDaysLosingByMinimumGr + " дней.");
-        System.out.println("Если спортсмен будет худеть по " + maxGrPerDay + " грамм в день, то похудение займёт "+ countOfDaysLosingByMaxGr + " дней.");
+        System.out.println("Если спортсмен будет худеть по " + minimumGrPerDay + " грамм в день, то похудение займёт " + countOfDaysLosingByMinimumGr + " дней.");
+        System.out.println("Если спортсмен будет худеть по " + maxGrPerDay + " грамм в день, то похудение займёт " + countOfDaysLosingByMaxGr + " дней.");
         System.out.println("Если спортсмен будет терять среднее значение грамм в день, то он похедеет за " + daysOnAverage + " дней.");
 
         int oldSalaryOfMasha = 67760;
@@ -113,18 +112,18 @@ public class Main {
         byte monthInOneYear = 12;
         int fullNumberInPercent = 100;
 
-        int newSalaryOfMasha = oldSalaryOfMasha+((oldSalaryOfMasha/fullNumberInPercent)*highInPercent);
-        int oldMashaSalaryInYear = oldSalaryOfMasha*monthInOneYear;
-        int newMashaSalaryInYear = newSalaryOfMasha*monthInOneYear;
-        int differenceBetweenOldAndNewMashaSalary = newMashaSalaryInYear-oldMashaSalaryInYear;
-        int newSalaryOfDenis = oldSalaryOfDenis+((oldSalaryOfDenis/fullNumberInPercent)*highInPercent);
-        int oldDenisSalaryInYear = oldSalaryOfDenis*monthInOneYear;
-        int newDenisSalaryInYear = newSalaryOfDenis*monthInOneYear;
-        int differenceBetweenOldAndNewDenisSalary = newDenisSalaryInYear-oldDenisSalaryInYear;
-        int newSalaryOfKristina = oldSalaryOfKristina+((oldSalaryOfKristina/fullNumberInPercent)*highInPercent);
-        int oldKristinaSalaryInYear = oldSalaryOfKristina*monthInOneYear;
-        int newKristinaSalaryInYear = newSalaryOfKristina*monthInOneYear;
-        int differenceBetweenOldAndNewKristinaSalary = newKristinaSalaryInYear-oldKristinaSalaryInYear;
+        int newSalaryOfMasha = oldSalaryOfMasha + ((oldSalaryOfMasha / fullNumberInPercent) * highInPercent);
+        int oldMashaSalaryInYear = oldSalaryOfMasha * monthInOneYear;
+        int newMashaSalaryInYear = newSalaryOfMasha * monthInOneYear;
+        int differenceBetweenOldAndNewMashaSalary = newMashaSalaryInYear - oldMashaSalaryInYear;
+        int newSalaryOfDenis = oldSalaryOfDenis + ((oldSalaryOfDenis / fullNumberInPercent) * highInPercent);
+        int oldDenisSalaryInYear = oldSalaryOfDenis * monthInOneYear;
+        int newDenisSalaryInYear = newSalaryOfDenis * monthInOneYear;
+        int differenceBetweenOldAndNewDenisSalary = newDenisSalaryInYear - oldDenisSalaryInYear;
+        int newSalaryOfKristina = oldSalaryOfKristina + ((oldSalaryOfKristina / fullNumberInPercent) * highInPercent);
+        int oldKristinaSalaryInYear = oldSalaryOfKristina * monthInOneYear;
+        int newKristinaSalaryInYear = newSalaryOfKristina * monthInOneYear;
+        int differenceBetweenOldAndNewKristinaSalary = newKristinaSalaryInYear - oldKristinaSalaryInYear;
 
         System.out.println("Маша теперь получает " + newSalaryOfMasha + " рублей. Годовой доход вырос на " + differenceBetweenOldAndNewMashaSalary + " рублей.");
         System.out.println("Денис теперь получает " + newSalaryOfDenis + " рублей. Годовой доход вырос на " + differenceBetweenOldAndNewDenisSalary + " рублей.");
