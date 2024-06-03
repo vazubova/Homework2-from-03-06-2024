@@ -71,5 +71,26 @@ public class Main {
 
         System.out.println("В школе, где " + countOfClasses +  " классов, нужно " + countOfWhitePaint +  " банок белой краски и " + countOfBrownPaint +  " банок коричневой краски");
 
+        byte numberOfBananas = 5;
+        byte grInOneBanana = 80;
+        int mlOfMilk = 200;
+        byte grInOneHundredMl = 105;
+        byte numberOfIceCream = 2;
+        byte grInOneIceCream = 100;
+        byte eggs = 4;
+        byte grInOneEgg = 70;
+        int grPerKg = 1000;
+
+        int grOfFiveBananas = numberOfBananas*grInOneBanana;
+        int mlOfMilkToOneHundred = mlOfMilk/100;
+        int grOfMilk = grInOneHundredMl*mlOfMilkToOneHundred;
+        int grOfIceCream = grInOneIceCream*numberOfIceCream;
+        int grOfEggs = grInOneEgg*eggs;
+        int weightGr = grOfFiveBananas+grOfMilk+grOfIceCream+grOfEggs;
+        float weightKg = weightGr/(float)grPerKg;
+
+        System.out.println("Вес завтрака в граммах составляет " + weightGr + ". Вес завтрака в килограммах составляет " + weightKg);
+
+
     }
 }
