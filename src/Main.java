@@ -91,6 +91,21 @@ public class Main {
 
         System.out.println("Вес завтрака в граммах составляет " + weightGr + ". Вес завтрака в килограммах составляет " + weightKg);
 
+        byte needToLoseWeightInKg = 7;
+        int minimumGrPerDay = 250;
+        int maxGrPerDay = 500;
+        int grInOneKg = 1000;
+        byte amountOfDataAboutWeight = 2;
+
+        int needToLoseWeightInGr = needToLoseWeightInKg*grInOneKg;
+        int countOfDaysLosingByMinimumGr = needToLoseWeightInGr/minimumGrPerDay;
+        int countOfDaysLosingByMaxGr = needToLoseWeightInGr/maxGrPerDay;
+        int daysOnAverage = needToLoseWeightInGr/((minimumGrPerDay+maxGrPerDay)/amountOfDataAboutWeight);
+
+        System.out.println("Если спортсмен будет худеть по " + minimumGrPerDay + " грамм в день, то похудение займёт "+ countOfDaysLosingByMinimumGr + " дней.");
+        System.out.println("Если спортсмен будет худеть по " + maxGrPerDay + " грамм в день, то похудение займёт "+ countOfDaysLosingByMaxGr + " дней.");
+        System.out.println("Если спортсмен будет терять среднее значение грамм в день, то он похедеет за " + daysOnAverage + " дней.");
+
 
     }
 }
